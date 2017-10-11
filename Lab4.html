@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>Randall Courtney:Lab 4 for ITMD-361 Fall 2017:html form</title>
+</head>
+<body>
+  <h1><strong>Volunteer Form</strong></h1>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" enctype="multipart/form-data">
+<fieldset>
+  <legend><strong>My Info</strong></legend>
+  <p>
+    <label>First Name: <input type="text" name="text_field" placeholder="First Name"></label>
+  </p>
+  <p>
+    <label>Last Name: <input type="text" name="text_field" placeholder="Last Name"></label>
+  </p>
+  <p>
+    <label>Phone Number: <input type="text" name="text_field" placeholder="Phone #"></label>
+  </p>
+  <p>
+    <label>Email: <input type="text" name="text_field" placeholder="name@###.com"></label>
+  </p> 
+  <p>
+    <label>Gender:</label>
+	</p>
+	<p>
+	<label><input type="radio" name="gender_button" value="male">Male</label>
+    <label><input type="radio" name="gender_button" value="female">Female</label>
+	</p>
+  <select name="AGE">
+    <option value="under 18">under 18</option>
+    <option value="18-24">18-24</option>
+    <option value="25-34">25-34</option>
+    <option value="35-44">35-44</option>
+    <option value="45-54">45-54</option>
+    <option value="55-64">55-64</option>
+    <option value="65 and over">65 and over</option>
+  </select>
+</fieldset>
+<fieldset>
+  <legend><strong>My Availability</strong></legend>
+    <p>
+	<label>Days Available:</label>
+	</p>
+    <p>
+       <input type="checkbox" name="checkbox_field[]" value="Sunday"><label>Sunday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Monday"><label>Monday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Tuesday"><label>Tuesday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Wednesday"><label>Wednesday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Thursday"><label>Thursday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Friday"><label>Friday</label>
+       <input type="checkbox" name="checkbox_field[]" value="Saturday"><label>Saturday</label>
+    </p>
+	<p>
+     <label>Any Comments?:</label>
+    </p>
+    <p>
+    <textarea> col="20" row="10" name="comment_field" placeholder="Enter Comments Here" placeholder="Enter Comments Here"</textarea>
+	</p>
+	</fieldset>
+  <fieldset>
+  <input type="submit" value="Send Me">
+  </fieldset>
+  <input type="hidden" name="hidden_field" value="rcourtney1">
+</form>
+</body>
+</html>
+
+
+
+
+
