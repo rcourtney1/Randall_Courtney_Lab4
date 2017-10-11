@@ -10,25 +10,26 @@
 <fieldset>
   <legend><strong>My Info</strong></legend>
   <p>
-    <label>First Name: <input type="text" name="text_field" placeholder="First Name"></label>
+    <label>First Name: <input type="text" name="frist_name_field" placeholder="First Name"></label>
   </p>
   <p>
-    <label>Last Name: <input type="text" name="text_field" placeholder="Last Name"></label>
+    <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"></label>
   </p>
   <p>
-    <label>Phone Number: <input type="text" name="text_field" placeholder="Phone #"></label>
+    <label>Phone Number: <input type="text" name="phone_field" placeholder="Phone #"></label>
   </p>
   <p>
-    <label>Email: <input type="text" name="text_field" placeholder="name@###.com"></label>
+    <label>Email: <input type="text" name="email_field" placeholder="name@###.com"></label>
   </p> 
   <p>
     <label>Gender:</label>
 	</p>
 	<p>
-	<label><input type="radio" name="gender_button" value="male">Male</label>
-    <label><input type="radio" name="gender_button" value="female">Female</label>
+	<label><input type="radio" name="gender_field" value="male">Male</label>
+    <label><input type="radio" name="gender_field" value="female">Female</label>
 	</p>
-  <select name="AGE">
+<label>Age:</label>
+  <select name="age_field">
     <option value="under 18">under 18</option>
     <option value="18-24">18-24</option>
     <option value="25-34">25-34</option>
@@ -43,21 +44,19 @@
     <p>
 	<label>Days Available:</label>
 	</p>
-    <p>
-       <input type="checkbox" name="checkbox_field[]" value="Sunday"><label>Sunday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Monday"><label>Monday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Tuesday"><label>Tuesday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Wednesday"><label>Wednesday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Thursday"><label>Thursday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Friday"><label>Friday</label>
-       <input type="checkbox" name="checkbox_field[]" value="Saturday"><label>Saturday</label>
-    </p>
+    <ul>
+	    <li><input type="checkbox" name="available_field[]" value="Sunday"><label>Sunday</label></li>
+	    <li><input type="checkbox" name="available_field[]" value="Monday"><label>Monday</label></li>
+            <li><input type="checkbox" name="available_field[]" value="Tuesday"><label>Tuesday</label></li>
+            <li><input type="checkbox" name="available_field[]" value="Wednesday"><label>Wednesday</label></li>
+            <li><input type="checkbox" name="available_field[]" value="Thursday"><label>Thursday</label></li>
+	    <li><input type="checkbox" name="available_field[]" value="Friday"><label>Friday</label></li>
+            <li><input type="checkbox" name="available_field[]" value="Saturday"><label>Saturday</label></li>
+	</ul>
 	<p>
      <label>Any Comments?:</label>
     </p>
-    <p>
-    <textarea> col="20" row="10" name="comment_field" placeholder="Enter Comments Here" placeholder="Enter Comments Here"</textarea>
-	</p>
+    <textarea> col="20" row="10" name="comment_field" placeholder="Enter Comments Here"</textarea>
 	</fieldset>
   <fieldset>
   <input type="submit" value="Send Me">
